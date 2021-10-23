@@ -1,0 +1,110 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+
+  body {
+    height: 100vh;
+    background-image: url("../assets/vegetables-set-left-black-slate\ \(1\).jpg");
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+  }
+
+  .food-card {
+    position: relative;
+    margin: 5% auto;
+    width: 70%;
+    height: 80%;
+    border-radius: 30px !important;
+    background-color: white;
+    box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.6), 0 25px 40px 0 rgba(0, 0, 0, 0.6);
+  }
+
+  .accent {
+    height: 100%;
+    width: 100%;
+    border-radius: 30px !important;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .accent-img {
+    display: block;
+    position: absolute;
+    right: 0;
+    height: 100%;
+  }
+
+  .food {
+    position: absolute;
+    right: 10%;
+    top: 15%;
+    height: 70%;
+    
+  }
+
+  .description {
+    height: 100%; 
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+  }
+
+
+  .description div {
+    width: 40%;
+    margin-left: 5%;
+    background-color: transparent;
+  }
+
+  .pink-title {
+    color: #c2185b;
+    font-size: .9em;
+  }
+
+  .sr-only {
+    size: 30px;
+  }
+
+  .pakapin img {
+    position: absolute;
+    bottom: 0;
+    right: 17%;
+    height: 40%;
+    z-index: 2;
+  }
+</style>
+<body>
+  <div class="pakapin">
+    <img src="../assets/hand-holding-sushi-with-chopsticks (1).png" alt="">
+  </div>
+  <div class="food-card">
+    
+
+    <div class="description">
+      <div>
+        <p class="pink-title"><strong>TODAY'S MENU</strong></p>
+        <h3>Grilled Steak <br>w/ Potato Wedges</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nulla quidem hic sed quos nisi optio rerum ipsum, rem id dolor et nemo assumenda quae ad delectus facere expedita natus.</p>
+      
+        <hr>
+
+        <ngb-rating [(rate)]="currentRate"></ngb-rating>
+        
+        <pre>Rate: <b>{{currentRate}}</b> of 10</pre>
+      
+      </div>
+    </div>
+    <div class="accent">
+        <img class="accent-img" src="../assets/BlackAccent.png" alt="">
+
+        <img class="food" src="../assets/food-13549.png" alt="">
+    </div>
+  </div>
+
+</body>
